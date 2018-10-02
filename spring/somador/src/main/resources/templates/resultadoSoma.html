@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="utf-8">
-<title>Insert title here</title>
+<title>App - Somador</title>
 </head>
 <body>
 	<h1>App - Somador</h1>
-	<p>O resultado do soma é: 0</p>
+	<p>O resultado da soma é: <span th:text="${resultadoSoma}">0</span></p>
 </body>
 </html>
