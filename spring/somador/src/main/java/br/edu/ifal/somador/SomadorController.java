@@ -11,4 +11,9 @@ public class SomadorController {
 		return "formSoma";
 	}
 	
+	@GetMapping("/somar")
+	public String somar() {
+		return "resultadoSoma";
+	}
+	
 }
