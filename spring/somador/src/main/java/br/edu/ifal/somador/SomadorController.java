@@ -18,6 +18,8 @@ public class SomadorController {
 		Integer soma = numero1 + numero2;
 		
 		model.addAttribute("resultadoSoma", soma);
+		model.addAttribute("termo1", numero1);
+		model.addAttribute("termo2", numero2);
 		
 		return "resultadoSoma";
 	}
