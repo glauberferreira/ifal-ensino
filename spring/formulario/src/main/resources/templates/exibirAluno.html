@@ -15,6 +15,40 @@
 			<th>Matrícula</th>
 			<td th:text="${aluno.matricula}">2018XYZ</td>
 		</tr>
+		<tr>
+			<th>Estrangeiro</th>
+			<td th:text="${aluno.estrangeiro}">true/false</td>
+		</tr>
+		<tr>
+			<th>Estrangeiro</th>
+			<td th:text="${aluno.estrangeiro} ? 'Sim' : 'Não'">Sim/Não</td>
+		</tr>
+		<tr>
+			<th>Projetos</th>
+			<td th:text="${aluno.projetos}">toString do Array</td>
+		</tr>
+		<tr>
+			<th>Projetos</th>
+			<td>
+				<ul>
+					<li th:each="projeto : ${aluno.projetos}" th:text="${projeto}">Projeto</li>
+				</ul>
+			</td>
+		</tr>
+		<!-- https://www.thymeleaf.org/doc/tutorials/3.0/usingthymeleaf.html#arrays -->
+		<!-- https://www.thymeleaf.org/apidocs/thymeleaf/3.0.9.RELEASE/org/thymeleaf/expression/Arrays.html -->
+		<tr>
+			<th>Projeto de Ensino</th>
+			<td th:text="${#arrays.contains(aluno.projetos, 'Ensino')}">true/false</td>
+		</tr>
+		<tr>
+			<th>Projeto de Extensão</th>
+			<td th:text="${#arrays.contains(aluno.projetos, 'Extensão')}">true/false</td>
+		</tr>
+		<tr>
+			<th>Projeto de Pesquisa</th>
+			<td th:text="${#arrays.contains(aluno.projetos, 'Pesquisa')}">true/false</td>
+		</tr>
 	</table>
 </body>
 </html>

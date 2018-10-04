@@ -9,6 +9,15 @@
 	<form action="/cadastrarAluno" method="post" th:object="${aluno}">
 		<p>Nome: <input type="text" th:field="*{nome}"></p>
 		<p>Matrícula: <input type="text" th:field="*{matricula}"></p>
+		<label th:for="${#ids.next('estrangeiro')}">É estrangeiro?</label>
+		<input type="checkbox" th:field="*{estrangeiro}">
+		<p>Participa de Projetos?</p>
+		<ul>
+			<li th:each="projeto : ${todosProjetos}">
+				<input type="checkbox" th:field="*{projetos}" th:value="${projeto}">
+				<label th:for="${#ids.prev('projetos')}" th:text="${projeto}"></label>
+			</li>
+		</ul>
 		<p><button type="submit">Enviar</button></p>
 	</form>
 </body>
