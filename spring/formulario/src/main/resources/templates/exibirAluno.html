@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>App - Formulário</title>
+</head>
+<body>
+	<h1>App - Formulário</h1>
+	<table>
+		<tr>
+			<th>Nome</th>
+			<td th:text="${aluno.nome}">Fulano de Tal</td>
+		</tr>
+		<tr>
+			<th>Matrícula</th>
+			<td th:text="${aluno.matricula}">2018XYZ</td>
+		</tr>
+	</table>
+</body>
+</html>
