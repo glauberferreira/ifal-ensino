@@ -13,6 +13,9 @@ public class AlunoController {
 	public String exibirForm(Model model) {
 		model.addAttribute("aluno", new Aluno());
 		
+		String[] projetos = {"Ensino", "Extensão", "Pesquisa"};
+		model.addAttribute("todosProjetos", projetos);
+		
 		return "formAluno";
 	}
 	

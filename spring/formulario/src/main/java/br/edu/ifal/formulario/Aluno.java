@@ -5,6 +5,7 @@ public class Aluno {
 	private String nome;
 	private String matricula;
 	private boolean estrangeiro;
+	private String[] projetos;
 	
 	public String getNome() {
 		return nome;
@@ -28,6 +29,14 @@ public class Aluno {
 
 	public void setEstrangeiro(boolean estrangeiro) {
 		this.estrangeiro = estrangeiro;
+	}
+
+	public String[] getProjetos() {
+		return projetos;
+	}
+
+	public void setProjetos(String[] projetos) {
+		this.projetos = projetos;
 	}
 	
 }
