@@ -9,6 +9,8 @@
 	<form action="/cadastrarAluno" method="post" th:object="${aluno}">
 		<p>Nome: <input type="text" th:field="*{nome}"></p>
 		<p>Matrícula: <input type="text" th:field="*{matricula}"></p>
+		<label th:for="${#ids.next('estrangeiro')}">É estrangeiro?</label>
+		<input type="checkbox" th:field="*{estrangeiro}">
 		<p><button type="submit">Enviar</button></p>
 	</form>
 </body>

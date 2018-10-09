@@ -15,6 +15,14 @@
 			<th>Matrícula</th>
 			<td th:text="${aluno.matricula}">2018XYZ</td>
 		</tr>
+		<tr>
+			<th>Estrangeiro</th>
+			<td th:text="${aluno.estrangeiro}">true/false</td>
+		</tr>
+		<tr>
+			<th>Estrangeiro</th>
+			<td th:text="${aluno.estrangeiro} ? 'Sim' : 'Não'">Sim/Não</td>
+		</tr>				
 	</table>
 </body>
 </html>

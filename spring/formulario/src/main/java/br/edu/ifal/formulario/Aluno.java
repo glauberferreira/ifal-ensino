@@ -4,6 +4,7 @@ public class Aluno {
 
 	private String nome;
 	private String matricula;
+	private boolean estrangeiro;
 	
 	public String getNome() {
 		return nome;
@@ -19,6 +20,14 @@ public class Aluno {
 	
 	public void setMatricula(String matricula) {
 		this.matricula = matricula;
+	}
+
+	public boolean isEstrangeiro() {
+		return estrangeiro;
+	}
+
+	public void setEstrangeiro(boolean estrangeiro) {
+		this.estrangeiro = estrangeiro;
 	}
 	
 }
