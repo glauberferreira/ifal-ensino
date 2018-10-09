@@ -19,6 +19,10 @@ public class AlunoController {
 		String[] formas = {"Integrada", "Concomitante", "Subsequente"};
 		model.addAttribute("todasFormas", formas);
 		
+		String[] ufs = { "AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR",
+				"PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO" };
+		model.addAttribute("todasUFs", ufs);
+		
 		return "formAluno";
 	}
 	

@@ -25,6 +25,11 @@
 				<label th:for="${#ids.prev('formaArticulacao')}" th:text="${forma}">Forma</label>
 			</li>
 		</ul>
+		<select th:field="*{uf}">
+			<option th:each="umaUF : ${todasUFs}"
+					th:text="${umaUF}"
+					th:value="${umaUF}">UF</option>
+		</select>
 		<p><button type="submit">Enviar</button></p>
 	</form>
 </body>

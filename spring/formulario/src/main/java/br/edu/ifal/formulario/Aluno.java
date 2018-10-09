@@ -12,6 +12,7 @@ public class Aluno {
 	 * o Ensino Médio
 	 */
 	private String formaArticulacao;
+	private String uf;
 
 	public String getNome() {
 		return nome;
@@ -51,6 +52,14 @@ public class Aluno {
 
 	public void setFormaArticulacao(String formaArticulacao) {
 		this.formaArticulacao = formaArticulacao;
+	}
+
+	public String getUf() {
+		return uf;
+	}
+
+	public void setUf(String uf) {
+		this.uf = uf;
 	}
 
 }
