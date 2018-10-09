@@ -6,7 +6,13 @@ public class Aluno {
 	private String matricula;
 	private boolean estrangeiro;
 	private String[] projetos;
-	
+
+	/**
+	 * Formas de articulação entre a Educação Profissional Técnica de Nível Médio e
+	 * o Ensino Médio
+	 */
+	private String formaArticulacao;
+
 	public String getNome() {
 		return nome;
 	}
@@ -38,5 +44,13 @@ public class Aluno {
 	public void setProjetos(String[] projetos) {
 		this.projetos = projetos;
 	}
-	
+
+	public String getFormaArticulacao() {
+		return formaArticulacao;
+	}
+
+	public void setFormaArticulacao(String formaArticulacao) {
+		this.formaArticulacao = formaArticulacao;
+	}
+
 }

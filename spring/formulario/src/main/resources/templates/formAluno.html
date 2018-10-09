@@ -18,6 +18,13 @@
 				<label th:for="${#ids.prev('projetos')}" th:text="${projeto}">Projeto</label>
 			</li>
 		</ul>
+		<p>Forma de Articulação entre a Educação Profissional Técnica de Nível Médio e o Ensino Médio</p>
+		<ul>
+			<li th:each="forma : ${todasFormas}">
+				<input type="radio" th:field="*{formaArticulacao}" th:value="${forma}">
+				<label th:for="${#ids.prev('formaArticulacao')}" th:text="${forma}">Forma</label>
+			</li>
+		</ul>
 		<p><button type="submit">Enviar</button></p>
 	</form>
 </body>

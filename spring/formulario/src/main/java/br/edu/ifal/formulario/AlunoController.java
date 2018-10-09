@@ -16,6 +16,9 @@ public class AlunoController {
 		String[] projetos = {"Ensino", "Extensão", "Pesquisa"};
 		model.addAttribute("todosProjetos", projetos);
 		
+		String[] formas = {"Integrada", "Concomitante", "Subsequente"};
+		model.addAttribute("todasFormas", formas);
+		
 		return "formAluno";
 	}
 	

@@ -49,6 +49,10 @@
 			<th>Projeto de Pesquisa</th>
 			<td th:text="${#arrays.contains(aluno.projetos, 'Pesquisa')}">true/false</td>
 		</tr>
+		<tr>
+			<th>Forma de Articulação</th>
+			<td th:text="${aluno.formaArticulacao}">Forma</td>
+		</tr>		
 	</table>
 </body>
 </html>
