@@ -18,6 +18,8 @@ public class AlunoController {
 	
 	@PostMapping("/cadastrarAluno")
 	public String cadastrar(@ModelAttribute Aluno aluno) {
+		aluno.setNome(aluno.getNome().toUpperCase());
+		
 		return "exibirAluno";
 	}
 	
