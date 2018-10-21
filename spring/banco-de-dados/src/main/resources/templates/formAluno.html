@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>App - Banco de Dados</title>
+</head>
+<body>
+	<h1>App - Banco de Dados</h1>
+	<form action="/cadastrarAluno" method="post" th:object="${aluno}">
+		<p>Nome: <input type="text" th:field="*{nome}"></p>
+		<p>Matrícula: <input type="text" th:field="*{matricula}"></p>
+		<p><button type="submit">Enviar</button></p>
+	</form>
+</body>
+</html> 
