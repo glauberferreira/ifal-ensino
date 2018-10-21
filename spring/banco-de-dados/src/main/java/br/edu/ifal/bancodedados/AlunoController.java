@@ -9,6 +9,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class AlunoController {
 
+	private AlunoRepository alunoRepository;
+	
+	public AlunoController(AlunoRepository alunoRepository) {
+		this.alunoRepository = alunoRepository;
+	}
+
 	@GetMapping("/formulario")
 	public String exibirForm(Model model) {
 		model.addAttribute("aluno", new Aluno());
@@ -18,6 +24,8 @@ public class AlunoController {
 
 	@PostMapping("/cadastrarAluno")
 	public String cadastrar(@ModelAttribute Aluno aluno) {
+		alunoRepository.save(aluno);
+		
 		return "exibirAluno";
 	}
 
