@@ -1,5 +1,7 @@
 package br.edu.ifal.bancodedados;
 
+import java.util.Optional;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -37,5 +39,15 @@ public class AlunoController {
 		
 		return "tabelaAlunos";
 	}
-
+	
+	@GetMapping("/exibir")
+	public String exibir(Integer id, Model model) {
+		Optional<Aluno> aluno = alunoRepository.findById(id);
+		
+		// TODO: Pode-se não encontrar um aluno com este id. Trataremos depois.
+		model.addAttribute("aluno", aluno.get());
+		
+		return "exibirAluno";
+	}
+	
 }

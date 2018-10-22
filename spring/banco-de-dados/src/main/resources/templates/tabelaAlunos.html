@@ -13,7 +13,7 @@
 			<th>Matrícula</th>
 		</tr>
 		<tr th:each="aluno : ${alunos}">
-			<td th:text="${aluno.nome}">Fulano de Tal</td>
+			<td><a href="exibirAluno.html" th:text="${aluno.nome}" th:href="@{/exibir(id=${aluno.id})}" >Fulano de Tal</a></td>
 			<td th:text="${aluno.matricula}">2018XYZ</td>
 		</tr>
 	</table>
