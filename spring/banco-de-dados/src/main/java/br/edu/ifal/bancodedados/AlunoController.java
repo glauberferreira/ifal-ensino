@@ -28,5 +28,14 @@ public class AlunoController {
 		
 		return "exibirAluno";
 	}
+	
+	@GetMapping("/listarAlunos")
+	public String listar(Model model) {
+		Iterable<Aluno> alunos = alunoRepository.findAll();
+		
+		model.addAttribute("alunos", alunos);
+		
+		return "tabelaAlunos";
+	}
 
 }

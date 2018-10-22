@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>App - Banco de Dados</title>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+	<h1>App - Banco de Dados</h1>
+	<table>
+		<tr>
+			<th>Nome</th>
+			<th>Matrícula</th>
+		</tr>
+		<tr th:each="aluno : ${alunos}">
+			<td th:text="${aluno.nome}">Fulano de Tal</td>
+			<td th:text="${aluno.matricula}">2018XYZ</td>
+		</tr>
+	</table>
+
+</body>
+</html>
