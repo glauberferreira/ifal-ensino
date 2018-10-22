@@ -26,7 +26,7 @@ public class AlunoController {
 	public String cadastrar(@ModelAttribute Aluno aluno) {
 		alunoRepository.save(aluno);
 		
-		return "exibirAluno";
+		return "redirect:/listarAlunos";
 	}
 	
 	@GetMapping("/listarAlunos")
