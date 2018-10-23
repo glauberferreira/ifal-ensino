@@ -50,4 +50,11 @@ public class AlunoController {
 		return "exibirAluno";
 	}
 	
+	@GetMapping("/excluir")
+	public String excluir(Integer id) {
+		alunoRepository.deleteById(id);
+		
+		return "redirect:/listarAlunos";
+	}
+	
 }

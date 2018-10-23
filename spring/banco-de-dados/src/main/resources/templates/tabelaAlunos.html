@@ -11,10 +11,12 @@
 		<tr>
 			<th>Nome</th>
 			<th>Matrícula</th>
+			<th>Ações</th>
 		</tr>
 		<tr th:each="aluno : ${alunos}">
 			<td><a href="exibirAluno.html" th:text="${aluno.nome}" th:href="@{/exibir(id=${aluno.id})}" >Fulano de Tal</a></td>
 			<td th:text="${aluno.matricula}">2018XYZ</td>
+			<td><a href="tabelaAlunos.html" th:href="@{/excluir(id=${aluno.id})}">Excluir</a></td>
 		</tr>
 	</table>
 
