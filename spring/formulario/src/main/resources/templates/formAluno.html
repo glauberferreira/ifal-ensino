@@ -6,7 +6,7 @@
 </head>
 <body>
 	<h1>App - Formulário</h1>
-	<form action="/cadastrarAluno" method="post" th:object="${aluno}">
+	<form action="exibirAluno.html" th:action="@{/cadastrarAluno}" method="post" th:object="${aluno}">
 		<p>Nome: <input type="text" th:field="*{nome}"></p>
 		<p>Matrícula: <input type="text" th:field="*{matricula}"></p>
 		<label th:for="${#ids.next('estrangeiro')}">É estrangeiro?</label>
