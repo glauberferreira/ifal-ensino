@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>App - Somador</title>
 </head>
 <body>
-	<h1><a href="/">App - Somador</a></h1>
-	<form action="/somar" method="post">
+	<h1><a href="index.html" th:href="@{/}">App - Somador</a></h1>
+	<form action="resultadoSoma.html" th:action="@{/somar}" method="post">
 		<input name="numero1" type="number"> +
 		<input name="numero2" type="number">
 		<button type="submit">Somar</button>
