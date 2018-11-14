@@ -3,7 +3,7 @@ package br.edu.ifal.validacao;
 public class Pessoa {
 
 	private String nome;
-	private String idade;
+	private Integer idade;
 
 	public String getNome() {
 		return nome;
@@ -11,10 +11,10 @@ public class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getIdade() {
+	public Integer getIdade() {
 		return idade;
 	}
-	public void setIdade(String idade) {
+	public void setIdade(Integer idade) {
 		this.idade = idade;
 	}
 	
