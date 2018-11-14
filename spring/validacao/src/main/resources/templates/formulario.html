@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Validação</title>
+</head>
+<body>
+	<h1>Formulário</h1>
+	<form action="exibirPessoa.html" th:action="@{/cadastrarPessoa}" method="post" th:object="${pessoa}">
+		<p>Nome: <input type="text" th:field="*{nome}" required="required"></p>
+		<p>Idade: <input type="number" th:field="*{idade}" required="required"></p>
+		<p><button type="submit">Enviar</button></p>
+	</form>		
+</body>
+</html>

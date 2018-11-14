@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Validação</title>
+</head>
+<body>
+	<h1>Pessoa</h1>
+	<table>
+		<tr>
+			<th>Nome</th>
+			<td th:text="${pessoa.nome}">Fulano de Tal</td>
+		</tr>
+		<tr>
+			<th>Idade</th>
+			<td th:text="${pessoa.idade}">18</td>
+		</tr>
+	</table>
+</body>
+</html>
