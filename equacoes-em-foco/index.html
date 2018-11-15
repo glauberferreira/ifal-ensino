@@ -20,11 +20,122 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
     <title>Equações em Foco</title>
 </head>
 
-<body>
-    <h1>Equações em Foco</h1>
+<body onload="w3.sortHTML('#projetos', '.item', 'td:nth-child(1)')">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-3">Equações em Foco</h1>
+        </div>
+        
+        <table id="projetos" class="table table-striped table-sm">
+            <thead>
+                <tr>
+                    <th onclick="w3.sortHTML('#projetos', '.item', 'td:nth-child(1)')" style="cursor:pointer">Disciplina <i class="fas fa-sort"></i></th>
+                    <th onclick="w3.sortHTML('#projetos', '.item', 'td:nth-child(2)')" style="cursor:pointer">Tema <i class="fas fa-sort"></i></th>
+                    <th onclick="w3.sortHTML('#projetos', '.item', 'td:nth-child(3)')" style="cursor:pointer">Equipe <i class="fas fa-sort"></i></th>
+                    <th onclick="w3.sortHTML('#projetos', '.item', 'td:nth-child(4)')" style="cursor:pointer">Turma <i class="fas fa-sort"></i></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="item">
+                    <td>Física</td>
+                    <td><a href="http://aprendiresistores.surge.sh/" target="_blank">Resistência elétrica</a></td>
+                    <td>Eliaquim Silveira Júnior | Ítala Costa | Guilherme Falcão</td>
+                    <td>513</td>
+                </tr>
+                <tr class="item">
+                    <td>Matemática</td>
+                    <td><a href="http://baricentrodeumtriangulo.surge.sh/" target="_blank">Baricentro de um triângulo</a></td>
+                    <td>Bruna Tenório | <a href="https://github.com/greysonmrx" target="_blank">Greyson Santos Filho</a> <i class="fab fa-github"></i> | Letícia Mascarenhas</td>
+                    <td>513</td>
+                </tr>
+                <tr class="item">
+                    <td>Física</td>
+                    <td><a href="http://efisica.surge.sh/" target="_blank">Campo elétrico</a></td>
+                    <td>Isabelle Braz | João Silva | Vitória Carvalho</td>
+                    <td>513</td>
+                </tr>
+                <tr class="item">
+                    <td>Matemática</td>
+                    <td><a href="http://pontomediodeumareta.surge.sh/" target="_blank">Ponto médio de um segmento</a></td>
+                    <td>Carolina Diodato | Danielly Gomes | Jucimara Silva</td>
+                    <td>513</td>
+                </tr>
+                <tr class="item">
+                    <td>Matemática</td>
+                    <td><a href="http://equacao_da_reta.surge.sh/" target="_blank">Equação da reta</a></td>
+                    <td>Bárbara Santos | Rairis Silva | Marcos Costa</td>
+                    <td>513</td>
+                </tr>
+                <tr class="item">
+                    <td>Matemática</td>
+                    <td><a href="http://distanciaentredoispontos-mvg.surge.sh/" target="_blank">Distância entre dois pontos</a></td>
+                    <td>Everton Rodrigues | Genildo Soares | Matheus Fernandes</td>
+                    <td>513</td>
+                </tr>
+                <tr class="item">
+                    <td>Matemática</td>
+                    <td><a href="http://geometrianalitica-dpr.surge.sh/" target="_blank">Distância entre ponto e reta</a></td>
+                    <td>Anita Silva | Gustavo Mariano | Ryan Silva</td>
+                    <td>513</td>
+                </tr>
+                <tr class="item">
+                    <td>Física</td>
+                    <td><a href="http://potencialeletrico.surge.sh/" target="_blank">Potencial elétrico</a></td>
+                    <td>Beatriz Cavalcante | João Santos | <a href="https://github.com/sergiobarrostm" target="_blank">Sérgio Barros</a> <i class="fab fa-github"></i></td>
+                    <td>513</td>
+                </tr>
+                <tr class="item">
+                    <td>Matemática</td>
+                    <td><a href="http://alinhamentotrespontos.surge.sh/" target="_blank">Alinhamento de três pontos</a></td>
+                    <td>Antônio Silva | Laryssa Silva | Wemerson Gomes</td>
+                    <td>513</td>
+                </tr>
+                <tr class="item">
+                    <td>Matemática</td>
+                    <td><a href="http://cofangular.surge.sh/" target="_blank">Coeficiente angular</a></td>
+                    <td>Aline Medeiros | Maysa Calixto | Shirley Lopes</td>
+                    <td>513</td>
+                </tr>
+                <tr class="item">
+                    <td>Física</td>
+                    <td><a href="http://fisicareceptores.surge.sh/" target="_blank">Receptor elétrico</a></td>
+                    <td>Alisson Silva | Everton Lima | Luan Santos</td>
+                    <td>523</td>
+                </tr>
+                <tr class="item">
+                    <td>Física</td>
+                    <td><a href="http://campomagnetico.surge.sh/" target="_blank">Campo magnético</a></td>
+                    <td>Amanda Silva | José Galvão | Kayane Silva</td>
+                    <td>523</td>
+                </tr>
+                <tr class="item">
+                    <td>Matemática</td>
+                    <td><a href="http://geometrianalitica-dpr.surge.sh/" target="_blank">Geometria plana</a></td>
+                    <td>Bárbara Santos | Heric Alves | Mikaelly Vieira</td>
+                    <td>523</td>
+                </tr>
+                <tr class="item">
+                    <td>Matemática</td>
+                    <td><a href="http://numeroscomplexos.surge.sh/" target="_blank">Números complexos</a></td>
+                    <td>Cássia Teixeira | Fernanda Oliveira | Larissa Vieira | Vanessa Santos</td>
+                    <td>523</td>
+                </tr>
+                <tr class="item">
+                    <td>Física</td>
+                    <td><a href="http://geradoreletrico.surge.sh/" target="_blank">Gerador elétrico</a></td>
+                    <td>Matheus Silva | Denisson Guedes | José Santos Júnior</td>
+                    <td>523</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
