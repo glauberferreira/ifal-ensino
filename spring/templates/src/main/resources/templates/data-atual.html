@@ -7,6 +7,6 @@
 <body>
 	<h1>Data Atual</h1>
 	<p th:text="${data}"></p>
-	<div th:insert="~{rodape :: #copyright}"></div>
+	<div th:replace="~{rodape :: #copyright}"></div>
 </body>
 </html>
