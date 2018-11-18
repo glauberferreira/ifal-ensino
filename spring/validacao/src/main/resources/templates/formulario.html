@@ -10,6 +10,7 @@
 		<p>Nome: <input type="text" th:field="*{nome}" required="required"></p>
 		<p th:errors="*{nome}"></p>
 		<p>Idade: <input type="number" th:field="*{idade}" required="required"></p>
+		<p th:errors="*{idade}"></p>
 		<p><button type="submit">Enviar</button></p>
 	</form>		
 </body>
