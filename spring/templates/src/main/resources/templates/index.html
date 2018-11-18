@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="UTF-8">
-<title>Página Principal</title>
+<head th:replace="~{cabecalho :: padrao(~{::title})}">
+	<title>Página Principal</title>
 </head>
 <body>
 	<h1>Página Principal</h1>
 	<a href="/exibirDataAtual">Data Atual</a>
 	<div th:replace="~{rodape :: copyright}"></div>
+	<div th:replace="~{rodape :: scripts}"></div>
 </body>
 </html>

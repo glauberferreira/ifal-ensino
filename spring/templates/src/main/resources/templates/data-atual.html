@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta charset="UTF-8">
-<title>Data Atual</title>
+<head th:replace="~{cabecalho :: padrao(~{::title})}">
+	<title>Data Atual</title>
 </head>
 <body>
 	<h1>Data Atual</h1>
 	<p th:text="${data}"></p>
 	<div th:replace="~{frag :: fragmento(123456)}"></div>
 	<div th:replace="~{rodape :: copyright}"></div>
+	<div th:replace="~{rodape :: scripts}"></div>
 </body>
 </html>
