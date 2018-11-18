@@ -1,10 +1,12 @@
 package br.edu.ifal.validacao;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 public class Pessoa {
 
 	@NotBlank
+	@Size(min = 3, max = 60)
 	private String nome;
 	private Integer idade;
 
