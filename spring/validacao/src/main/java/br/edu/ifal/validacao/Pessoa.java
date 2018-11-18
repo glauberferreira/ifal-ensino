@@ -1,7 +1,10 @@
 package br.edu.ifal.validacao;
 
+import javax.validation.constraints.NotBlank;
+
 public class Pessoa {
 
+	@NotBlank
 	private String nome;
 	private Integer idade;
 

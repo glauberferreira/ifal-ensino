@@ -1,7 +1,10 @@
 package br.edu.ifal.validacao;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,8 +20,12 @@ public class PessoaController {
 	}
 	
 	@PostMapping("/cadastrarPessoa")
-	public String cadastrar(@ModelAttribute Pessoa pessoa) {
-		return "exibirPessoa";
+	public String cadastrar(@ModelAttribute @Valid Pessoa pessoa, BindingResult bindingResult) {
+		if (bindingResult.hasErrors()) {
+			return "formulario";
+		} else {
+			return "exibirPessoa";
+		}
 	}
 	
 }
