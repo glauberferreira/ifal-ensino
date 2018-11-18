@@ -7,6 +7,7 @@
 <body>
 	<h1>Data Atual</h1>
 	<p th:text="${data}"></p>
+	<div th:replace="~{frag :: fragmento(123456)}"></div>
 	<div th:replace="~{rodape :: copyright}"></div>
 </body>
 </html>
