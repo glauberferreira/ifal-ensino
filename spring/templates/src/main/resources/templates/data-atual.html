@@ -2,11 +2,11 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>Página Principal</title>
+<title>Data Atual</title>
 </head>
 <body>
-	<h1>Página Principal</h1>
-	<a href="/exibirDataAtual">Data Atual</a>
+	<h1>Data Atual</h1>
+	<p th:text="${data}"></p>
 	<div th:insert="~{rodape :: #copyright}"></div>
 </body>
 </html>
